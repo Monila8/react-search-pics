@@ -1,9 +1,10 @@
 function ImageShow({ image }) {
+  const { urls, alt_description } = image
   return (
     <div>
       <img
-        src={image.urls.small}
-        alt={image.alt_description}
+        src={urls.small}
+        alt={alt_description}
       />
     </div>
   )
