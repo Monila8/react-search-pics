@@ -11,7 +11,9 @@ function ImageList({ images }) {
     )
   })
 
-  return <div className='image-list'>{renderedImages}</div>
+  return <div className='image-list'>
+  {!images.length && (<h1>There aren't images</h1>)}
+  {renderedImages}</div>
 }
 
 export default ImageList
